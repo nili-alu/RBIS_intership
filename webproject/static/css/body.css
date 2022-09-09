@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;}
+:root{
+    --header:#2A728F;
+    --rbsi-background: rgb(23,118,107);
+    --background-stories: rgb(97, 150, 144);   
+    --section-heading: bolder, navy;
+}
+.section_heading{font-weight: 50px; color: navy;text-align: center;}
+:root {--triangle_height: calc(100vw / 10);--triangle_width: calc(100vw / 2);}
+.triangle-shape { width: 0; height: 0; border-left: var(--triangle_width) solid transparent;
+  border-right: var(--triangle_width) solid transparent;
+  border-top: var(--triangle_height) solid green; }
+
+  

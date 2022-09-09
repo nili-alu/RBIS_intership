@@ -1,0 +1,30 @@
+{% load static %}
+<style>
+    /* Slideshow container */
+    :root {--rendingpage-height: 200px;}
+    .rendingpage{height: var(--rendingpage-height);}
+    .rendingpage .slideshow-container {background-color: rgb(52, 2, 2);background-size: 100% 100%;width: 100%;
+      height: calc(var(--rendingpage-height) * 2);margin-left: 50%;transform: translate(-50%, -50%);
+      margin-top: 200px;animation: mySlides 10s infinite linear;    
+    }
+    .rendingpage .slideshow-container .mySlides{color: #f5f6f8f1; font-size:larger; text-align:center; }
+    @keyframes mySlides {
+      0% {background-image: url('static/images/Rhinos-reintegration.jpg');}
+      50% {background-image: url('static/images/Bisoke.jpg');}
+      100% {background-image: url('static/images/birds.jpg');}
+    }
+</style>
+
+<section class="rendingpage">
+  <div class="slideshow-container" >
+    <div class='mySlides'>
+      <br><br><br><br><br><br><br>
+      <br><br><br>
+      <q>RBIS<br>Overcaming he constraint of biodiversitydata
+        accessibility</q><br><br>
+        <q> Biodiversity Information System <br>Open access portal to
+        biodiversity of Rwanda</q>
+    </div>
+  </div>
+</section>
+

@@ -1,0 +1,31 @@
+
+    /* Style the section */
+    .rbis-info{background-color: #17766B;padding: 10px;color: white;text-align:left; height:280px; margin-top: 31.5%;}
+    /* Create two columns/boxes that floats next to each other and a section to hold them*/
+    .rbis-info article {float: left;width: 50%;background:transparent;padding: 20px; text-align:right }
+    .rbis-info aside {float: right;padding: 20px;width: 50%;}
+    /*style the content of the two columns */
+    .rbis-info img{width: 40%;float: none;margin-right: 10%;}
+    .rbis-info p{width:70%; margin-top: 5%;}
+    /* Clear floats after the columns */
+    .rbis-info section::after {content: "";display: table;clear: both;}
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 1200px) {    
+        .rbis-info{height:300px}
+    }
+    @media (max-width: 1000px) {    
+        .rbis-info{height:300px}
+        .rbis-info article {width: 40%;height: auto; background-color: aqua;} 
+        .rbis-info img{width: 80%;margin-right: 5%}
+        .rbis-info aside {width: 60%;height: auto; background-color: blueviolet;} 
+        .rbis-info article{text-align: center;margin-right: none}
+        .rbis-info p{width:100%} 
+    }
+    @media (max-width: 620px) {
+        .rbis-info {height: 550px;}
+        .rbis-info img{width: 50%;margin-right: 5%}
+        .rbis-info article, .rbis-info aside {width: 100%;height: auto;} 
+        .rbis-info article{text-align: center;margin-right: none}
+        .rbis-info p{width:100%} 
+    }
+    

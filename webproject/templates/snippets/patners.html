@@ -1,0 +1,112 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Patners</title>
+    <link rel="stylesheet" href="{% static 'css/patners.css' %}" >
+</head>
+
+<section>
+
+    <div class="slideshow-container2">
+
+        <h2 class="section_heading">Patners</h2>
+
+        <div class="slide">
+
+            <ul class="list">
+                <img src="{% static 'partners/arcos_logo.png' %}" alt="oops img">
+                <img src="{% static 'partners/RWCA.png' %}" alt="oops img">
+                <img src="{% static 'partners/diana_fossey_logo.png' %}" alt="oops img">
+                <img src="{% static 'partners/jrs_logo.png' %}" alt="oops img">
+                <img src="{% static 'partners/nisr_logo.png' %}" alt="oops img">
+
+            </ul>
+
+        </div>
+
+        <div class="slide">
+
+            <ul class="list2">
+                <section >
+                    <img src="{% static 'partners/Unesco_logo.png' %}" alt="oops img"><br>
+                    <div class="part2" >
+                        <li><img src="{% static 'partners/rdb_logo.png' %}" alt="oops img"></li><br>
+                        <li><img class="image2" src="{% static 'partners/sanbi.png' %}" alt="oops img"></li>
+                    </div>
+                </section>
+            </ul>
+        </div>
+
+        <div class="slide">
+
+            <ul class="list3">
+                <section class="slide3">
+                    <div class="section1">
+                        <li><img   src="{% static 'partners/kartoza_Edpmaf3.png' %}" alt="oops img">
+                        </li><br>
+                        <li><img src="{% static 'partners/rema-logo-small.png' %}" alt="oops img">
+                        </li>
+                    </div>
+                    <div class="section2">
+                        <img  src="{% static 'partners/FRC_LOGO.png' %}" alt="oops img">
+                        <img  src="{% static 'partners/moe_logo.png' %}" alt="oops img">
+                    </div>
+                </section>
+            </ul>
+
+        </div>
+
+        <a class="prev2" onclick="plusSlides2(-1)">❮</a>
+        <a class="next2" onclick="plusSlides2(1)">❯</a>
+
+    </div>
+
+    <!-- <div class="dot-container2">
+        <span class="dot" onclick="currentSlide2(1)"></span>
+        <span class="dot" onclick="currentSlide2(2)"></span>
+        <span class="dot" onclick="currentSlide2(3)"></span>
+    </div> -->
+
+    <script>
+        var slideIndex = 1;
+        showSlides2(slideIndex);
+
+        function plusSlides2(n) {
+            showSlides2(slideIndex += n);
+        }
+
+        function currentSlide2(n) {
+            showSlides2(slideIndex = n);
+        }
+
+        function showSlides2(n) {
+            var i;
+            var slides = document.getElementsByClassName("slide");
+           
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            
+            
+        }
+    </script>
+</section>
+
+<!-- dotmovement on partners -->
+
+<!-- var dots = document.getElementsByClassName("dot");
+for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");    
+}
+dots[slideIndex - 1].className += " active";
+ -->
+</html>

@@ -1,0 +1,90 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/header.css' %}" >
+<nav class="navbar">
+    <img class="logo" src="{% static 'images/RBIS-logo.png' %}">
+    <img class="yellow-figure" src="{% static 'images/yellow.jpg'%}">
+    <ul class="left-side">
+        <li><a class="button" href="">Explore</a></li>
+        <span class="dropdown" >
+            <li class="dropbtn">
+                <a class="button" href="">Data <i class="fa fa-caret-down"></i></a>
+                <span class="dropdown-content">
+                    <a href="#"> Source Reference</a>
+                    <a href="#">Cite visits</a>
+                </span>
+            </li>
+        </span>
+        <li><a class="button" href="">News</a></li>
+        <li><a class="button" href="">Docs</a></li>
+        <span class="dropdown" >
+            <li class="dropbtn">
+                <a class="button" href="">About <i class="fa fa-caret-down"></i></a>
+                <span class="dropdown-content"><a href="#"> Contact</a><a href="#">About us</a></span>
+            </li>
+        </span>
+        <span class="dropdown" >
+            <li class="dropbtn">
+                <a class="button" href="">Discover <i class="fa fa-caret-down"></i></a>
+                <span class="dropdown-content">
+                    <a href="#"> Our Team</a><a href="#">CoEB</a>
+                    <a href="#"> Herbarium</a><a href="#">University of Rwanda</a>
+                </span>
+            </li>
+        </span>
+
+    </ul>
+    <ul class="right-side">
+        <li><form action="/action_page.php" class="search">
+            <input class="search-box" type="text" placeholder="Search.." name="search">
+            <li><button type="submit">search</button></li>
+            </form>
+        </li>
+        <li><input class="signup" name="SignUp" type="button" value="Sign Up"></li>
+        <li><input class="login" name="Login" type="button" value="Login"></li>
+        <div class="menu tablet_landscape">
+            <a href="javascript:void(0);" class="icon" onclick="fn_l_tablet_menu()"><i class="fa fa-bars"></i></a>
+            <a href="#home" ></a>
+            <div id="l_tabletLinks">
+                <a href="#"> Login</a><a href="#">SignUp</a>
+            </div>
+        </div>
+        <div class="menu tablet_potrait">
+            <a href="javascript:void(0);" class="icon" onclick="fn_p_tablet_menu()"><i class="fa fa-bars"></i></a>
+            <a href="#home" ></a>
+            <div id="p_tabletLinks">
+                <a href="#"> Explore</a><a href="#">Data</a><a href="#">News</a>
+                <a href="#">Docs</a><a href="#"> About</a><a href="#">Discover</a>
+            </div>
+        </div>
+        <div class="menu mobile" >
+            <a href="javascript:void(0);" class="icon" onclick="fn_mobile_menu()"><i class="fa fa-bars"></i></a>
+            <a href="#home" ></a>
+            <div id="mobileLinks">
+                <a href="#"> Explore</a><a href="#">Data</a><a href="#">News</a>
+                <a href="#">Docs</a><a href="#"> About</a><a href="#">Discover</a>
+            </div>
+        </div>
+    </ul>
+
+    <script>
+        function fn_l_tablet_menu() {
+            var x = document.getElementById("l_tabletLinks");
+            if (x.style.display === "block") {x.style.display = "none";} 
+            else {x.style.display = "block";}
+        }
+        function fn_p_tablet_menu() {
+            var x = document.getElementById("p_tabletLinks");
+            if (x.style.display === "block") {x.style.display = "none";} 
+            else {x.style.display = "block";}
+        }
+        function fn_mobile_menu() {
+            var x = document.getElementById("mobileLinks");
+            if (x.style.display === "block") {x.style.display = "none";} 
+            else {x.style.display = "block";}
+        }
+    </script>
+   
+</nav>

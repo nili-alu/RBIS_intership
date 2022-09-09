@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/base_css.css' %}" >
+<link rel="stylesheet" href="{% static 'css/body.css' %}" >
+
+<body >
+   {% include 'snippets/rendingPage.html' %}
+   {% include 'snippets/RBIS_info.html' %}
+    <div class="triangle-shape" style="border-top-color: var(--rbsi-background)   " ></div>
+    {% include 'snippets/records.html'  %}
+    {% include 'snippets/recentstories.html' %}
+    <div class="triangle-shape" style="border-top-color:var(--background-stories)  " ></div>
+    {% include 'snippets/patners.html' %}
+</body>
